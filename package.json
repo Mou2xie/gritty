@@ -1,0 +1,24 @@
+{
+  "name": "encrx_rspack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rspack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^0.2.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.26.0",
+    "antd": "^5.6.1",
+    "chrome-types": "^0.1.204",
+    "localforage": "^1.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

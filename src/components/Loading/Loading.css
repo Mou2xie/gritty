@@ -1,0 +1,15 @@
+.loading_container {
+    inset: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background: white;
+    opacity: 0.5;
+}

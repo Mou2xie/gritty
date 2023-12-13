@@ -1,0 +1,36 @@
+{
+    "name": "Gritty",
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./dist/setAnchor.bundle.js",
+                "./dist/selectWord.bundle.js"
+            ],
+            "css": [
+                "./dist/setAnchor.bundle.css"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "./dist/background.bundle.js",
+        "type": "module"
+    },
+    "permissions": [
+        "contextMenus",
+        "storage"
+    ],
+    "action": {
+        "default_icon": {
+            "16":"./assets/icon16.png",
+            "24":"./assets/icon24.png",
+            "32": "./assets/icon32.png"
+        },
+        "default_popup": "./popUp.html",
+        "default_title": "Gritty"
+    }
+}
